@@ -7,6 +7,7 @@
      --hue-wrong: 0;
      --hue-correct: 145;
 }
+
 body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -22,7 +23,6 @@ body {
 body.correct {
     --hue: var(--hue-correct);
 }
-
 .container {
 
     width: 800px;
@@ -31,5 +31,4 @@ body.correct {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
-
 }
