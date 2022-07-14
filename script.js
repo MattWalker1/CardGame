@@ -6,8 +6,10 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
+
 startButton.addEventListener('click', startGame)
 
+// prevents instance where no question from appearing when game shows next
 function startGame() {
     console.log('started...')
     startButton.classList.add('hide')
@@ -42,6 +44,9 @@ function selectAnswer(e) {
 
 }
 
+// add questions in here, once we have 10, set shuffledQuestions = questions.sort(() => Math.random() - .5)
+
+    currentQuestionIndex = 0
 const questions =  [
     {
         question: 'What is 2+2', 
